@@ -1,0 +1,13 @@
+{
+    "name": "chatwee/chatwee",
+    "description": "Chatwee PHP SDK deployed as composer package",
+    "type": "library",
+    "require": {
+        "php": "^5.2.1|^7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chatwee\\": "src/"
+        }
+    }
+}
