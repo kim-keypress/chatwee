@@ -61,7 +61,7 @@ class HttpClient
 
 		$result = "";
 		foreach($parameters as $key => $value) {
-			$result .= ($key . "=" . ($value ? urlencode(htmlentities(htmlspecialchars_decode($value))) : $value) . '&');
+			$result .= ($key . "=" . ($value ? urlencode($value) : $value) . '&');
 		}
 		$result = substr_replace($result, "", -1);
 		return $result;
